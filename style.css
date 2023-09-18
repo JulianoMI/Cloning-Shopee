@@ -1,0 +1,209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header p {
+    color: white;
+}
+body {
+    min-height: 200vh;
+}
+header {
+    top: 0px;
+    position: sticky;
+    width: 100%;
+    height: 130px;
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav.top {
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+}
+
+nav.left {
+    float: left;
+    display: flex;
+   flex-direction: row;
+    gap: 8px;
+    
+}
+
+
+nav.right {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 8px;
+}
+
+.item1 {
+    grid-area: menu;
+    background-image: url(shopee\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item2 {
+    grid-area: main;
+    background-image: url(shopee\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item3 {
+    grid-area: right;
+    background-image: url(shopee\ 3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.grid-container {
+    display: grid;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'menu  menu main'
+        'menu menu right';
+    gap: 10px;
+    /* background-color: salmon; */
+    padding: 10px;
+    height: 220px;
+    width:1200px;
+    margin:0px auto;
+
+}
+
+.container>div {
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+img.shopee {
+    margin-left: 200px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+div.entry-group {
+    width: 760px;
+    background-color: white;
+}
+
+form input.search-btn {
+    width: 50px;
+    height: 33px;
+    border: none;
+    background-color: orangered;
+    margin-top: 3px;
+}
+
+form input.search-entry {
+    width: 700px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    padding-left: 25px;
+}
+
+form input.search-entry:focus {
+    outline: none;
+}
+
+div.search {
+    display: flex;
+}
+
+div.categories {
+    display:flex;
+    flex-direction: row;
+    column-gap: 7px;
+    margin-top:-20px;
+
+}
+
+div button{
+    background-color:transparent;
+    border:0px;
+    font-size: 12px;
+    color: white;
+}
+
+button.Sandal{
+    margin-left:410px;
+    background-color:transparent;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+nav.barat{
+    flex:25%;
+    padding-top:10px;
+
+}
+
+nav.timur{
+    flex:50%;
+    margin-top:10px;
+}
+
+div.cart{
+    flex:25%;
+}
+
+nav.bottom{
+    margin-top:10px;
+}
+
+img.shopping{
+    padding-left:40px;
+}
+
+div.pictures {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: black;
+    margin-left: 180px;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+div.pictures a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+div.pictures div {
+    height: 90px;
+    background-repeat: no-repeat;
+    padding-left: 7px;
+    background-size: 60px;
+    background-position: center center;
+}
